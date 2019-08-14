@@ -1,23 +1,22 @@
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
+    event.preventDefault();
     var historicalfigure1 = $("input#historicalfigure1").val();
     var historicalfigure2 = $("input#historicalfigure2").val();
     var verb1 = $("input#verb1").val();
-    var animalInput= $("input#animal").val();
-    var exclamationInput = $("input#exclamation").val();
-    var verb2Input = $("input#verb2").val();
-    var emotionInput = $("input#emotion").val();
+    var animal = $("input#animal").val();
+    var exclamation = $("input#exclamation").val();
+    var verb2 = $("input#verb2").val();
+    var emotion = $("input#emotion").val();
 
-    $(".historicalfigure1").text(historicalfigure1Input);
-    $(".historicalfigure2").text(historicalfigure2Input);
-    $(".animal").text(animalInput);
-    $(".exclamation").text(exclamationInput);
-    $(".verb1").text(verb1Input);
-    $(".verb2").text(verb2Input);
-    $(".emotion").text(emotionInput);
-
+    $(".historicalfigure1").text(historicalfigure1);
+    $(".historicalfigure2").text(historicalfigure2);
+    $(".animal").text(animal);
+    $(".exclamation").text(exclamation);
+    $(".verb1").text(verb1);
+    $(".verb2").text(verb2);
+    $(".emotion").text(emotion);
     $("#story").show();
 
-    event.preventDefault();
   });
 });
